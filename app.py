@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 import json
 
 service_account_info = json.loads(st.secrets["GCP_SERVICE_ACCOUNT"])
-GCP_SERVICE_ACCOUNT = {
+GCP_SERVICE_ACCOUNT = '''{
   "type": "service_account",
   "project_id": "equipment-troubleshooter",
   "private_key_id": "c43d63fee57d817cc71bd7446235b6287539817f",
@@ -17,7 +17,7 @@ GCP_SERVICE_ACCOUNT = {
   "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
   "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/medical-equipment-troubleshoot%40equipment-troubleshooter.iam.gserviceaccount.com",
   "universe_domain": "googleapis.com"
-}
+}'''
 
 
 
